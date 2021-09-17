@@ -1,0 +1,33 @@
+<div class="main">
+  <div class="main__heading">
+    <h2 style="text-align: center;"> Books Store</h2>
+    <a href="/add-book">
+        <button style="height: 35px; width: 100px; background-color: #0000FF; color: white; margin-top: 15px;">Add Book</button>
+    </a>
+    <a href="/get-books">
+        <button style="height: 35px; width: 100px; background-color: #0000FF; color: white; margin-top: 15px;">Get Books</button>
+    </a>
+  <div>
+    
+  <div class="main__subheading">
+    <h3>Title</h3>
+    <input #title="ngModel"  [(ngModel)]="titletext" style="height: 30px; width: 160%;" placeholder="Title"/>
+    <h3>Author</h3>
+    <input #author style="height: 30px; width: 160%;" placeholder="Author"/>
+  </div>
+    
+  <div class="main__split">
+    <div class="main__split__left">
+      <h3 style="margin-bottom: -5px;">Price</h3>
+      <input #price style="height: 30px; width: 50%; margin-bottom: 5px;" placeholder="Price"/>
+      <button (click)="getVal(title.value, author.value, price.value, date.value)" style="height: 30px; width: 20%; background-color: #00d100; color: white;">Submit</button>
+    </div>
+    <div class="main__split__right">
+      <h3>Published date</h3>
+      <input #date class="date_picker" type="date">
+    </div>
+  </div>
+  <!-- {{titletext}} -->
+</div>
+
+

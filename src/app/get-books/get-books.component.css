@@ -1,0 +1,66 @@
+.main{
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.473);
+    width: 50%;
+    top: 15%;
+    left: 25%;
+    display: inline;
+    height: 70%;
+    border-radius: 2px;
+}
+
+.main__heading{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+
+ 
+.main__subheading{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.main__split{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    width: 180%; 
+}
+
+
+.main__split__left{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.date_picker{
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+} 
+
+
+.booksdata{
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow-y: scroll;
+    max-height: 350px;
+    width: 160%;
+}
+
+.eachbook{
+    box-shadow: 0px 0px 1px black;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+td{
+    width: 50%;
+}
